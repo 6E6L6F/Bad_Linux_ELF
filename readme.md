@@ -26,11 +26,11 @@
   
 
     async def main():
-		    main = BadLinux()
-		    result = await main.get_partitions()
-		    print(result)
+	main = BadLinux()
+	result = await main.get_partitions()
+	print(result)
 		    
-	asyncio.run(main())
+    asyncio.run(main())
 اگر کد زیر را اجرا کنید مقدار برگشتی یک لیست حاوی تعدادی دیکشنری داخلش هست که اسم و ادرس تمامی پارتیشن ها و درایو ها همراه با فرمت انان است
 
 یک مثال ساده از چگونگی اجرای کد 
