@@ -63,7 +63,10 @@
 
 # Contact Me 
 Telegram: @E_L_F_6_6_6
- Instagram: @E_L_F_6_6_6
- Rubika: @E_L_F_6_6_6
- Bale: @E_L_F_6_6_6
+
+Instagram: @E_L_F_6_6_6
+
+Rubika: @E_L_F_6_6_6
+
+Bale: @E_L_F_6_6_6
 
