@@ -59,14 +59,33 @@
 ##
 فعلا ورژن لینوکس این پروژه این تعداد تابع را دارد و به زودی چیز های جدید تری به ان اضافه خواهد شد
 
-##
+## 
+
+## کلاس ریپیت تایمر
+
+این کلاس یک تابع میگیرد و سپس طی مقدار بازه زمانی مشخص ان را اجرا میکند به طور مثال هر ۱۰ ثانیه یکبار
+
+نحوه فراخوانی
+
+    from ELF_Linux.RepeateTime import RepeatedTimer
+    
+نحوه استفاده
+
+    timer = RepeatedTimer(interval = 10 , functions = main , *args , **kwargs)
+   
+   برای اجرا
+   
+
+    timer.run()
+
+برای قطع کردن آن
+
+    timer.stop()
+    
 
 # Contact Me 
 Telegram: @E_L_F_6_6_6
-
-Instagram: @E_L_F_6_6_6
-
-Rubika: @E_L_F_6_6_6
-
-Bale: @E_L_F_6_6_6
+ Instagram: @E_L_F_6_6_6
+ Rubika: @E_L_F_6_6_6
+ Bale: @E_L_F_6_6_6
 
