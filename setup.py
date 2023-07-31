@@ -7,5 +7,5 @@ setup(
     author='ELF',
     license='MIT',
     install_requires=[],
-    setup_requires=['psutil'],
+    setup_requires=['psutil' , 'wget'],
 )
