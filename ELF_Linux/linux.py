@@ -44,7 +44,7 @@ class BadLinux(object):
         except:
             return False
 
-    async def rub_command(self , command : str) -> str:
+    async def run_command(self , command : str) -> str:
         return subprocess.getoutput(command)
 
     async def add_in_shell(self , command : str) -> bool:
